@@ -1,3 +1,5 @@
+from taggit.managers import TaggableManager
+
 from django.db import models
 from django.urls import reverse
 from django.utils import timezone
@@ -26,6 +28,7 @@ class Post(models.Model):
     status = models.CharField(max_length=10,
                             choices=STATUS_CHOICES,
                             default='draft')
+    tags = TaggableManager()
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     publish = models.DateTimeField(default=timezone.now)
