@@ -7,7 +7,15 @@ the skills to easily create Django projects with basic functionality.
 
 ![Blog](./img/blog_overview.png)
 
-## Prerequisites
+## Requirements
+
+This project uses the following technologies:
+
+* Django version 3
+* Docker
+* Docker-compose
+* Poetry
+* PostgreSQL
 
 To be able to run this project you should have:
 
