@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-browser = webdriver.Firefox()
+browser = webdriver.Firefox(executable_path='/home/kiptoo/.local/bin/geckodriver')
 
 # Samwel has heard about a cool new blog. He goes to
 # check out its homepage
